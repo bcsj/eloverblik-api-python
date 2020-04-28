@@ -5,7 +5,9 @@ import requests
 
 # ============== ACCESS TOKEN AND URL BASE =================
 
-accessToken = ""  # <-- The ACCESS TOKEN goes here
+tokenFile = 'eloverblik.token'  # <-- The ACCESS TOKEN goes in this file
+f = open(tokenFile,'r')
+accessToken = f.readline()
 
 urlbase = 'https://api.eloverblik.dk/CustomerApi/'
 
